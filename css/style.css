@@ -1,0 +1,11 @@
+.header {
+  text-transform: uppercase;
+  text-align: center;
+  height: 58px;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 12px 0 12px 0;
+  color: var(--text-color);
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-heigth);
+}
