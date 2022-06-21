@@ -5,7 +5,66 @@
   width: 100%;
   background-color: var(--main-color);
   padding: 12px 0 12px 0;
-  color: var(--text-color);
   font-size: var(--heading-font-size);
   line-height: var(--heading-line-heigth);
+  font-weight: var(--font-weigth-bold);
+}
+
+.profile-section {
+  width: 100%;
+  height: 355px;
+  padding: 51px 175px 104px 227px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 68px;
+}
+
+.profile-section-img{
+  background-image: url(../assets/profile_2.png);
+  min-width: 411px;
+  height: 355px;
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-text {
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-heigth);
+  font-weight: var(--font-weigth-bold);
+  letter-spacing: 0.01em;
+}
+
+.about-me__line {
+  height: 4px;
+  background-color: var(--main-color);
+  border: none;
+  margin: 14px 0px 12px 0px;
+}
+
+.section__heading {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-heigth);
+  font-weight: var(--font-weigth-bold);
+  letter-spacing: 0.01em;
+}
+
+.about-me__description {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-heigth);
+  font-weight: var(--font-weigth-normal);
+  letter-spacing: 0.01em;
+  margin: 30px 0 30px 0;
+}
+
+.about-me__btn {
+  background: none;
+  color: var(--text-color);
+  padding: 15px 82px;
+  border: 2px solid #FFFFFF;
+  font-size: var(--btn-and-num-font-size);
+  line-height: var(--btn-and-num-line-heigth);
+  font-weight: var(--font-weigth-bold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
