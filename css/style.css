@@ -20,7 +20,7 @@
   margin: 51px 0 104px 0;
 }
 
-.profile-section-img{
+.profile-section-img {
   background-image: url(../assets/profile_2.png);
   min-width: 411px;
   height: 355px;
@@ -86,4 +86,61 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20.35px;
+}
+
+.footer {
+  width: 100%;
+  height: 205px;
+  background-color: var(--main-color);
+}
+
+.footer-avatar {
+  border-radius: 50%;
+  display: flex;
+  height: 167px;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section-description--footer {
+  margin: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 94px;
+  height: 94px;
+}
+
+.footer-list__heading {
+  font-weight: var(--font-weigth-bold);
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.footer-list__phone {
+  font-size: var(--btn-and-num-font-size);
+  line-height: var(--btn-and-num-line-heigth);
+  font-weight: var(--font-weigth-normal);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.footer__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  background-color: #16758A;
+  padding: 17px 0px 17px;
 }
