@@ -12,7 +12,7 @@
 
 .profile-section {
   width: 100%;
-  height: 355px;
+  /* height: 355px; */
   padding: 0px 175px 0px 227px;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,6 @@
 
 .gallery-section {
   width: 100%;
-  height: 616px;
   padding: 0px 175px 0px 227px;
   margin-bottom: 100px;
 }
@@ -143,4 +142,23 @@
   letter-spacing: 0.01em;
   background-color: #16758A;
   padding: 17px 0px 17px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 901px) {
+  .profile-section {
+    flex-direction: column;
+    padding: 51px 71px 0 67px;
+    gap: 65px;
+    margin: 0 0 54px 0;
+  }
+
+  .profile-section-img {
+  background-image: url(../assets/profile.png);
+  }
+
+  .gallery-section {
+    padding: 0 67px 0 67px;
+    margin-bottom: 51px;
+  }
 }
