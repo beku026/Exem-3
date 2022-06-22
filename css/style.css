@@ -1,7 +1,6 @@
 .header {
   text-transform: uppercase;
   text-align: center;
-  height: 58px;
   width: 100%;
   background-color: var(--main-color);
   padding: 12px 0 12px 0;
@@ -29,6 +28,11 @@
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 
 .main-text {
@@ -60,7 +64,7 @@
   margin: 30px 0 30px 0;
 }
 
-.about-me__btn {
+.btn--about-me {
   background: none;
   color: var(--text-color);
   padding: 15px 82px;
@@ -86,6 +90,26 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20.35px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item__bg-fon {
+  display: none;
+  position: absolute;
+  background-image: url(../assets/Rectangle_fon.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.grid-item:hover .grid-item__bg-fon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
@@ -153,7 +177,7 @@
 }
 
 @media (max-width: 1250px) {
-  .profile-section {
+  .profile-section{
     flex-direction: column;
     gap: 45px;
   }
@@ -181,7 +205,7 @@
   }
 
   .gallery-section {
-    margin-bottom: 51px;
+    margin-bottom: 51px; 
   }
 
   .gallery-section-grids {
@@ -223,6 +247,6 @@
   }
 
   .gallery-section {
-    margin-bottom: 53px;
+    margin-bottom: 53px; 
   }
 }
