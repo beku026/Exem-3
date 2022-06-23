@@ -187,7 +187,7 @@
   top: 100px;
 }
 
-.modal-close {
+.btn--modal-close {
   background: none;
   float: right;
   transform: translateY(-62px);
@@ -199,7 +199,6 @@
   font-weight: var(--font-weigth-bold);
   letter-spacing: 1.5px;
   text-transform: uppercase;
-
 }
 
 .footer {
@@ -287,7 +286,7 @@
   .profile-section {
     flex-direction: column;
     gap: 65px;
-    margin: 51 0 54px 0;
+    margin: 51px 0 54px 0;
   }
 
   .main {
