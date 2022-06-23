@@ -21,19 +21,13 @@
   margin: 51px 0 104px 0;
 }
 
-.profile-section-img {
+.profile-section__img {
   background-image: url(../assets/profile_2.png);
   min-width: 411px;
   height: 355px;
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: static
-}
-
-.btn:hover {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
 }
 
 .main-text {
@@ -65,8 +59,7 @@
   margin: 30px 0 30px 0;
 }
 
-.btn--about-me {
-  background: none;
+.btn {
   color: var(--text-color);
   padding: 15px 82px;
   border: 2px solid #FFFFFF;
@@ -75,6 +68,16 @@
   font-weight: var(--font-weigth-bold);
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.btn--about-me {
+  background: none;
 }
 
 .form {
@@ -130,14 +133,6 @@
 
 .btn-form {
   background: var(--bgn-color);
-  color: var(--text-color);
-  padding: 15px 82px;
-  border: 2px solid #FFFFFF;
-  font-size: var(--btn-and-num-font-size);
-  line-height: var(--btn-and-num-line-heigth);
-  font-weight: var(--font-weigth-bold);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 .gallery-section {
@@ -160,17 +155,12 @@
   position: relative;
 }
 
-.bg-fon {
+.bg-fon--item {
   display: none;
   position: absolute;
-  background-image: url(../assets/Rectangle_fon.png);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
-.grid-item:hover .bg-fon {
+.grid-item:hover .bg-fon--item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,20 +175,25 @@
   left: 50%;
   transform: translateX(-300px);
   top: 100px;
+  opacity: 0;
+}
+
+@keyframes modalAnimationNone {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn--modal-close {
   background: none;
   float: right;
-  transform: translateY(-62px);
-  color: var(--text-color);
+  transform: translateY(-20px);
   padding: 10px 24px;
-  border: 2px solid #FFFFFF;
-  font-size: var(--btn-and-num-font-size);
   line-height: 19px;
-  font-weight: var(--font-weigth-bold);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 .footer {
@@ -334,7 +329,7 @@
     padding: 16px 0 16px 16px;
     display: block;
     outline: none;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     width: 100%;
   }
 
