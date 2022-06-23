@@ -1,0 +1,45 @@
+:root {
+  --font-weigth-normal: 400;
+  --font-weigth-bold: 700;
+  --main-color: #19849B;
+  --bgn-color: #272A2F;
+  --text-color: #fff;
+  --heading-font-size: 30px;
+  --heading-line-heigth: 34px;
+  --h2-font-size: 24px;
+  --h2-line-heigth: 28px;
+  --small-font-size: 16px;
+  --small-line-heigth: 18px;
+  --btn-and-num-font-size: 18px;
+  --btn-and-num-line-heigth: 21px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, div, p, h1, h2, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bgn-color);
+  color: var(--text-color);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ol,ul {
+  list-style: none;
+}
