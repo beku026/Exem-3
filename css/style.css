@@ -363,8 +363,8 @@
     margin: 51px 0px 38px 0;
   }
 
-  .profile-section-img {
-    background-image: url(../assets/profile.png);
+  .profile-section__img {
+    background-image: url(../assets/profile_2.png);
     min-width: 100%;
   }
 
